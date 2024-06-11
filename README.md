@@ -20,6 +20,7 @@ To produce the first and second figures for the draft, after activating `aidovec
 ```bash
 python figs.py
 ```
+which create the figures as pdf files in `figs/fig1` and `figs/fig2`, respectively.
 
 ## Downloading and Extracting Dataset
 
