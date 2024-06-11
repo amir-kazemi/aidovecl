@@ -21,7 +21,16 @@ python figs.py
 ```
 This will generate the required figures and save them as PDF files in `figs/fig1` and `figs/fig2`, respectively.
 
-## Downloading and Extracting Dataset
+## An Overview of the Package:
+- `detec.py`: Detects vehicles and creates seed images.
+- `outpaint.py`: Outpaints the seed images.
+- `backdrop.py`: Generates background images.
+- `utils.py`: Provides utilities for the above files.
+
+For use cases, refer to 'fig1.py' and 'fig2.py'.
+
+
+## Downloading and Extracting Dataset for Vehicle Classification and Localization
 
 Download the dataset from the following source: [AIDOVECL Dataset](https://huggingface.co/datasets/amir-kazemi/aidovecl/tree/main).
 
@@ -32,3 +41,5 @@ datasets/
     ├── outpainted
     └── augmented
 ```
+
+
