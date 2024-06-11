@@ -15,6 +15,6 @@ conda activate aidovecl
 
 ## Downloading and Extracting Dataset
 
-Download the dataset from the following source: <a href="https://huggingface.co/datasets/amir-kazemi/aidovecl/tree/main" target="_blank">AIDOVECL Dataset</a>.
+Download the dataset from the following source: <a href="https://huggingface.co/datasets/amir-kazemi/aidovecl/tree/main" target="_blank" rel="noopener noreferrer">AIDOVECL Dataset</a>.
 
 After downloading, extract the zipped datasets to the `datasets` folder of the repository.
