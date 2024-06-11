@@ -13,6 +13,14 @@ conda env create -f aidovecl-env.yml
 conda activate aidovecl
 ```
 
+## Reproducing Figures
+
+To produce the first and second figures for the draft, after activating `aidovecl` environment, execute the following command in the root directory of the repository:
+
+```bash
+python figs.py
+```
+
 ## Downloading and Extracting Dataset
 
 Download the dataset from the following source: [AIDOVECL Dataset](https://huggingface.co/datasets/amir-kazemi/aidovecl/tree/main).
