@@ -6,7 +6,7 @@
 
 To set up the environment for AIDOVECL, follow these steps:
 
-First, ensure you have `conda` installed. Then, create a new conda environment using the provided `aidovecl-env.yml` file.
+First, ensure you have `conda` or `miniconda` installed. Then, create a new conda environment using the provided `aidovecl-env.yml` file.
 
 ```bash
 conda env create -f aidovecl-env.yml
@@ -17,4 +17,10 @@ conda activate aidovecl
 
 Download the dataset from the following source: [AIDOVECL Dataset](https://huggingface.co/datasets/amir-kazemi/aidovecl/tree/main).
 
-After downloading, extract the zipped datasets to the `datasets` folder of the repository.
+After downloading, extract the zipped datasets to the `datasets` folder of the repository. The structure should look like this:
+```bash
+datasets/
+    ├── real
+    ├── outpainted
+    └── augmented
+```
