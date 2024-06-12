@@ -28,7 +28,9 @@ This will generate the required figures and save them as PDF files in `figs/fig1
 - `utils.py`: Provides utilities for the above files.
 
 **Note 1:** For use cases, refer to `figs/fig1.py` and `figs/fig1.py`.
+
 **Note 2:** Please be patient during the initial run as the detection and inpainting models are being downloaded.
+
 **Note 3:** Despite setting random seeds, 100% reproducibility is not guaranteed. For more information, refer to [cuBLAS](https://docs.nvidia.com/cuda/cublas/index.html#results-reproducibility) and [PyTorch](https://pytorch.org/docs/stable/notes/randomness.html).
 
 
