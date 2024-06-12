@@ -42,7 +42,7 @@ datasets/
     └── augmented
 ```
 ## Training and Evaluating YOLO model on Datasets
-The following lines train and evaluate YOLO on `outpainted` datasets.
+The following lines train and evaluate YOLO on the `outpainted` (aka AIDOVECL) dataset.
 ```bash
 from ultralytics import YOLO
 # load a pretrained model (recommended for training)
