@@ -40,15 +40,15 @@ datasets/
     ├── real
         ├── images
         ├── labels
-        ├── real.yaml
+        └── real.yaml
     ├── outpainted
         ├── images
         ├── labels
-        ├── outpainted.yaml
+        └── outpainted.yaml
     └── augmented
         ├── images
         ├── labels
-        ├── augmented.yaml
+        └── augmented.yaml
 ```
 ## Training and Evaluating YOLO model on Datasets
 The following lines train and evaluate YOLO on the `outpainted` dataset (a.k.a. AIDOVECL).
