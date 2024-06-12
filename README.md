@@ -22,15 +22,15 @@ python figs.py
 This will generate the required figures and save them as PDF files in `figs/fig1` and `figs/fig2`, respectively.
 
 ## An Overview of the Package:
-- `detec.py`: Detects vehicles and creates seed images.
+- `detect.py`: Detects vehicles and creates seed images.
 - `outpaint.py`: Outpaints the seed images.
 - `backdrop.py`: Generates background images.
 - `utils.py`: Provides utilities for the above files.
 
-For use cases, refer to 'fig1.py' and 'fig2.py'.
+For use cases, refer to `figs/fig1.py` and `figs/fig1.py`.
 
 
-## Downloading and Extracting Dataset for Vehicle Classification and Localization
+## Downloading Datasets for Vehicle Classification and Localization
 
 Download the dataset from the following source: [AIDOVECL Dataset](https://huggingface.co/datasets/amir-kazemi/aidovecl/tree/main).
 
@@ -41,5 +41,30 @@ datasets/
     ├── outpainted
     └── augmented
 ```
+## Training and Evaluating YOLO model on Datasets
+The following lines train and evaluate YOLO on `outpainted` datasets.
+```bash
+from ultralytics import YOLO
+# load a pretrained model (recommended for training)
+model = YOLO('yolov8n.pt')
+# train the model (overwriting ./runs/detect/train/ if exists)
+results = model.train(
+    data='./datasets/outpainted/outpainted.yaml',
+    epochs=1000,
+    imgsz=512,
+    patience=100,
+    exist_ok=True
+)
+# load the best model
+best_model = YOLO("./runs/detect/train/weights/best.pt")
+# evaluate the model performance on test split
+results = best_model.val(
+    data='./datasets/outpainted/outpainted.yaml',
+    split='test',
+    imgsz=512,
+    conf=0.5,
+)
+```
+
 
 
