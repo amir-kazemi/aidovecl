@@ -32,7 +32,7 @@ For use cases, refer to `figs/fig1.py` and `figs/fig1.py`.
 
 ## Downloading Datasets for Vehicle Classification and Localization
 
-Download the dataset from the following source: [AIDOVECL Dataset](https://huggingface.co/datasets/amir-kazemi/aidovecl/tree/main).
+Download the dataset from the following source: [AIDOVECL Dataset](https://huggingface.co/datasets/amir-kazemi/aidovecl/tree/main) (will be uploaded by June 13, 2024).
 
 After downloading, extract the zipped datasets to the `datasets` folder of the repository. The structure should look like this:
 ```bash
