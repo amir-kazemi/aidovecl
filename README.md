@@ -38,8 +38,17 @@ After downloading, extract the zipped datasets to the `datasets` folder of the r
 ```bash
 datasets/
     ├── real
+        ├── images
+        ├── labels
+        real.yaml
     ├── outpainted
+        ├── images
+        ├── labels
+        outpainted.yaml
     └── augmented
+        ├── images
+        ├── labels
+        augmented.yaml
 ```
 ## Training and Evaluating YOLO model on Datasets
 The following lines train and evaluate YOLO on the `outpainted` dataset (a.k.a. AIDOVECL).
