@@ -1,0 +1,23 @@
+name: aidovecl
+channels:
+  - defaults
+  - conda-forge
+  - anaconda
+dependencies:
+  - python==3.9.18
+  - pip
+  - numpy==1.23.5
+  - tqdm==4.65.0
+  - matplotlib==3.8.3
+  - ultralytics==8.2.1
+  - pillow==10.2.0
+  - scikit-image==0.19.3
+  - ipykernel
+  - jupyter
+  - pip:
+      - piq==0.8.0
+      - torch==2.0.1
+      - torchvision==0.15.2
+      - huggingface-hub==0.23.3
+      - transformers==4.41.2
+      - diffusers[torch]==0.28.2

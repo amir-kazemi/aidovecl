@@ -1,0 +1,10 @@
+class_index:
+  coupe: 0
+  sedan: 1
+  suv: 2
+  minivan: 3
+  minibus: 4
+  bus: 5
+  van: 6
+  pickup: 7
+  truck: 8
