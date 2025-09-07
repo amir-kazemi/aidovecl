@@ -1,1 +1,1 @@
-__all__ = ['detect', 'outpaint', 'backdrop', 'utils']
+__all__ = ['detect', 'outpaint', 'backdrop', 'utils', 'yolo']

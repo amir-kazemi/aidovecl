@@ -115,7 +115,7 @@ def generate_background(base_folder, sample_size):
     negative_prompt = "car, vehicle, bus, truck, van, aerial view"
 
     pipeline = AutoPipelineForText2Image.from_pretrained(
-        "runwayml/stable-diffusion-v1-5", torch_dtype=torch.float16
+        "stable-diffusion-v1-5/stable-diffusion-v1-5", torch_dtype=torch.float16
     ).to("cuda")
     pipeline.set_progress_bar_config(disable=True)
     

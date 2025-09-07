@@ -10,12 +10,17 @@ dependencies:
   - tqdm==4.65.0
   - matplotlib==3.8.3
   - ultralytics==8.2.1
-  - pillow==10.2.0
+  - pillow==9.5.0
   - scikit-image==0.19.3
+  - ipykernel
+  - jupyter
+  - scikit-learn==1.6.1
   - pip:
       - piq==0.8.0
       - torch==2.0.1
       - torchvision==0.15.2
+      - sentence-transformers
       - huggingface-hub==0.23.3
       - transformers==4.41.2
       - diffusers[torch]==0.28.2
+      - ftfy==6.3.1

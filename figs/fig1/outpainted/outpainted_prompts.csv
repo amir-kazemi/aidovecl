@@ -1,0 +1,2 @@
+split_set,image_name,outpainted_file_name,prompt,qualiclip_score,clip_iqa_score,brisque_score,blur_factor_coef,iteration,guidance_scale,area_ratio
+train,coupe_20250621161338077.jpg,coupe_20250621161338077_20250621161344046.png,A street during a sunny day.,0.8927754163742065,0.9230011105537415,14.4140625,136,11,22,0.18571038920348704

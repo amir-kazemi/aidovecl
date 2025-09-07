@@ -1,0 +1,61 @@
+project_name: aidovecl
+
+class_index:
+  coupe: 0
+  sedan: 1
+  suv: 2
+  minivan: 3
+  minibus: 4
+  bus: 5
+  van: 6
+  pickup: 7
+  truck: 8
+
+detection:
+  buffer: 0.15
+  
+outpainting:
+  recolor_object: False
+  max_iter: 2000
+  mid_iter: 100
+  min_iter: 10 
+  canvas:
+    size:
+      height: 512
+      width: 512
+    area_ratio:
+      min: 0.10
+      max: 0.25
+  model: stable-diffusion-v1-5/stable-diffusion-inpainting
+  prompt_location_list: [road, street, driveway]
+  
+  prompt_time_list: [a sunny day, a cloudy day, sunrise, evening, sunset, dusk]
+  #negative_prompt: "render, cartoon, surreal, bizzare, bad, deformed, missing, billboard, advertisement, people, traffic, train, bus, car, truck."
+  negative_prompt: "render, cartoon, surreal, incoherence, bizzare, bad, deformed, mess, text, missing, billboard, blank, people, traffic, train, bus, car, truck, van, toy."
+  #negative_prompt: "render, cartoon, surreal, bizzare, bad, deformed, absurd, text, missing, blank, people, traffic, train, car, vehicle, toy, miniature."
+  mask_blur_coef:
+    min: 130
+    max: 160
+  guidance_scale:
+    min: 15
+    max: 25
+  quality:
+    brisque:
+      max: 20
+    clip_iqa:
+      min: 0.5
+    qualiclip:
+      lower_min: 0.85
+      upper_min: 0.89
+      step: 0.0004
+    
+segmentation:
+  guided_filter: 
+    radius: 5 #30
+    eps: !!float 1e-4
+    threshold: 0.8 #0.85
+  joint_bilateral_filter:
+    d: 50
+    sigmaColor: 50
+    sigmaSpace: 50
+    threshold: 0.8
