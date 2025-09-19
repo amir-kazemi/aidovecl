@@ -8,7 +8,11 @@
 </div>
 
 <p align="center">
-  <a href="https://arxiv.org/abs/2410.24116">📄 Link to paper (arXiv:2410.24116)</a>
+  <a href="https://arxiv.org/abs/2410.24116">📝 View the Paper on arXiv</a>
+</p>
+
+<p align="center">
+  <a href="https://huggingface.co/datasets/amir-kazemi/aidovecl">📊 Explore the Dataset on Hugging Face</a>
 </p>
 
 ## Installation Guide
@@ -95,10 +99,6 @@ datasets/
     │   ├── images
     │   ├── labels
     │   └── real.yaml
-    ├── outpainted
-    │   ├── images
-    │   ├── labels
-    │   └── outpainted.yaml
     └── augmented
         ├── images
         ├── labels
